@@ -169,7 +169,7 @@ interface VersusResultsProps {
   restartGame: () => void;
 }
 
-export const VersusResults = ({ scores, playerNames, questions, restartGame }: VersusResultsProps) => {
+export const VersusResults = ({ scores, playerNames, restartGame }: VersusResultsProps) => {
   const winner = scores[0] > scores[1] ? 0 : scores[0] < scores[1] ? 1 : -1;
 
   return (
